@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>MyGoBuddy</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>mygobuddy</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+
+	<!-- Added required permissions for MyGoBuddy app features -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>MyGoBuddy needs location access to show nearby buddies and enable trip tracking.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>MyGoBuddy needs background location access to track trips and provide safety features even when the app is not active.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>MyGoBuddy needs background location access to track trips and provide safety features even when the app is not active.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app needs camera access to take profile pictures and photos.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs photo library access to select profile pictures.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app needs microphone access for voice messages and calls.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>This app needs contacts access for emergency contacts and safety features.</string>
+
+	<!-- Added Google Maps API key from Android manifest -->
+	<key>GMSApiKey</key>
+	<string>AIzaSyAWhH7ic0UkHdLOVdzzoICiI5MmkLG7LLE</string>
+
+	<!-- Added push notification capability -->
+	<key>aps-environment</key>
+	<string>development</string>
+
+	<!-- Added background modes for location and notifications -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>background-fetch</string>
+		<string>remote-notification</string>
+		<string>background-processing</string>
+		<string>background-audio</string>
+	</array>
+
+	<!-- Added app transport security settings for network access -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+
+	<!-- Added file sharing capability for photo/document handling -->
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+
+	<!-- Added minimum iOS version requirement -->
+	<key>MinimumOSVersion</key>
+	<string>12.0</string>
+</dict>
+</plist>

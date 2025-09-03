@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "835781054907",
+    "project_id": "mygobuddy-f1743",
+    "storage_bucket": "mygobuddy-f1743.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835781054907:android:d703311006fa3cd158749e",
+        "android_client_info": {
+          "package_name": "com.mygobuddy.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtIx_e8doRZlq3dA9QDdSvaozhG8GCz_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
